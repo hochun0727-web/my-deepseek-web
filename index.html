@@ -59,7 +59,7 @@
         <!-- 左側設定 -->
         <aside class="sidebar">
             <h3>⚙️ 系統設定</h3>
-            <p class="warning-text">密鑰將安全地儲存在這台設備的瀏覽器中，不會經過任何後端伺服器。</p>
+            <p class="warning-text">密鑰</p>
             
             <div class="settings-group">
                 <label>DeepSeek API Key</label>
@@ -72,7 +72,7 @@
         <!-- 右側對話 -->
         <main class="chat-area">
             <div class="messages-container" id="chat-box">
-                <div class="msg-bubble msg-bot">歡迎！這是一個純前端版本的聊天室。請先在左側輸入並儲存您的 API Key，即可開始對話。您可以隨時用手機打開此網頁並輸入密鑰來使用。</div>
+                <div class="msg-bubble msg-bot">Have are nice day </div>
             </div>
             
             <div class="input-box">
@@ -91,7 +91,7 @@
         function saveKey() {
             const key = document.getElementById('api-key').value.trim();
             localStorage.setItem('ds_api_key', key);
-            alert('✅ 密鑰已儲存於本機瀏覽器！');
+            alert('✅SAVE');
         }
 
         function handleEnter(event) {
@@ -116,7 +116,7 @@
             
             if (!message) return;
             if (!apiKey) {
-                alert('請先在左側輸入並儲存 DeepSeek API Key！');
+                alert('請先在左側輸入並儲存');
                 return;
             }
 
